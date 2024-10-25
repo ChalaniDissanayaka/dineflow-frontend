@@ -12,7 +12,7 @@ function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
-  const { user, setUser } = useGlobal();
+  const { setUser } = useGlobal();
 
   const handleSubmit = async () => {
     try {
