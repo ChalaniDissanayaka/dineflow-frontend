@@ -1,0 +1,48 @@
+.main-menu-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+.menu-item-container {
+  margin: 2px;
+  text-align: center;
+  background-color: white;
+  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.menu-item-container img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu-item-title {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #2d394b;
+  padding-top: 5px;
+  padding-bottom: 3px;
+}
+
+.menu-item-price {
+  font-size: 16px;
+  color: #4c4d4e;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .main-menu-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .menu-item-title {
+    font-size: 14px;
+  }
+
+  .menu-item-price {
+    font-size: 14px;
+  }
+}

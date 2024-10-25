@@ -1,0 +1,69 @@
+.admin-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    background-color: black;
+    color: white;
+}
+
+.admin-navbar h2 {
+    margin: 0;
+}
+
+.admin-navbar-avatar {
+    color: black;
+}
+
+/* Desktop menu styling */
+.admin-navbar-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Hide the mobile icon on desktop */
+.admin-navbar-mobile-icon {
+    display: none;
+}
+
+/* Mobile dropdown menu */
+.admin-navbar-mobile-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 5px;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .admin-navbar {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start;
+    }
+
+    .admin-navbar h2 {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+
+    .admin-navbar-buttons {
+        display: none; /* Hide desktop menu */
+    }
+
+    .admin-navbar-mobile-icon {
+        display: block; /* Show the hamburger icon on mobile */
+        align-self: flex-end;
+    }
+
+    /* Position the mobile menu at the bottom */
+    .admin-navbar-mobile-menu {
+        display: flex; /* Display mobile menu when toggled */
+        width: 100%; /* Full width if needed */
+        align-items: flex-end; /* Align content to the left */
+        gap: 20px;
+    }
+}

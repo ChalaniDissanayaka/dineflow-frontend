@@ -1,0 +1,85 @@
+/* Desktop styles */
+.items-container {
+    padding: 20px;
+}
+
+.items-container h2.subtitle {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.items-container table {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.items-container img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.items-container th {
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(64, 63, 63);
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+    .items-container {
+        padding: 10px;
+    }
+
+    .items-container h2.subtitle {
+        font-size: 20px;
+    }
+
+    .items-container table {
+        font-size: 14px;
+    }
+
+    /* Resize image for mobile */
+    .items-container img {
+        height: 60px;
+        width: 60px;
+    }
+
+    /* Table adjustments for mobile */
+    .items-container table, 
+    .items-container thead, 
+    .items-container tbody, 
+    .items-container th, 
+    .items-container td, 
+    .items-container tr {
+        display: block;
+        width: 100%;
+    }
+
+    .items-container tr {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .items-container th,
+    .items-container td {
+        width: 50%;
+        text-align: left;
+    }
+
+    /* Make actions stack below */
+    .items-container td:last-child {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* Button spacing on mobile */
+    .items-container button {
+        font-size: 12px;
+        padding: 4px 8px;
+        margin-top: 5px;
+    }
+}
