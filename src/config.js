@@ -1,1 +1,1 @@
-export const api = "http://localhost:4200";
+export const api = "https://dineflow-server.up.railway.app";
