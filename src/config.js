@@ -1,1 +1,1 @@
-export const api = process.env.API || "https://dineflow-server.up.railway.app";
+export const api = process.env.API || "https://dineflow-server-production.up.railway.app";
